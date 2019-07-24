@@ -13,4 +13,14 @@ export class Post {
         this.added_at = new Date();
         this.loveIts = 0;
     }
+
+    onLoveIt() {
+        this.loveIts++;
+        console.log('Love it clicked. LoveIts = ' + this.loveIts);
+    }
+
+    onDontLoveIt() {
+        this.loveIts--;
+        console.log('Don\'t love it clicked. LoveIts = ' + this.loveIts);
+    }
 }
