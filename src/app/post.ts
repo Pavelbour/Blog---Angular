@@ -1,6 +1,6 @@
 export class Post {
 
-    // represente post-list-item-component
+    // this class represents post-list-item-component
 
     title: string;
     content: string;
@@ -15,11 +15,15 @@ export class Post {
     }
 
     onLoveIt() {
+        //click event listener for Love It
+        //incease the value of loveIts
         this.loveIts++;
         console.log('Love it clicked. LoveIts = ' + this.loveIts);
     }
 
     onDontLoveIt() {
+        //click event listener for Don't love it
+        //decrease the value of loveIts
         this.loveIts--;
         console.log('Don\'t love it clicked. LoveIts = ' + this.loveIts);
     }

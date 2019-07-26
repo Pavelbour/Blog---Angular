@@ -7,5 +7,7 @@ import { Post } from './post';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  post = new Post('Mon premier post');
+  posts = [new Post('Mon premier post'),
+          new Post('Mon deuxième post'),
+          new Post('Encore un post')];
 }
